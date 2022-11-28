@@ -22,7 +22,7 @@ node{
 
         sshPublisher(publishers: [sshPublisherDesc(configName: 'ansible', transfers: [sshTransfer(cleanRemote: false, excludes: '', 
         execCommand: '''cd /opt/docker;
-        ansible-playbook create_image.yml''', execTimeout: 900000000, flatten: false, makeEmptyDirs: false, 
+        ansible-playbook webdev_image.yml''', execTimeout: 900000000, flatten: false, makeEmptyDirs: false, 
         noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '//opt//docker', remoteDirectorySDF: false, 
         removePrefix: 'target', sourceFiles: 'target/*.jar')], usePromotionTimestamp: false, 
         useWorkspaceInPromotion: false, verbose: false)])
